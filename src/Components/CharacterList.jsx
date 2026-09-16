@@ -28,6 +28,7 @@ function NavPage({ page, setPage, search, setSearch }) {
           </li>
         </ul>
       </nav>
+      
 
       <form className="d-flex" onSubmit={(e) => e.preventDefault()}>
         <input
@@ -63,7 +64,7 @@ export function CharacterList() {
         if (data.results) {
           setCharacters(data.results);
         } else {
-          setCharacters([]); // Maneja casos sin resultados
+          setCharacters([]); // Manejar casos sin resultados
         }
       } catch (error) {
         console.error("Error al obtener los personajes:", error);
